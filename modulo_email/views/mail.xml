@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="coupon_program_inherit" model="ir.ui.view">
+        <field name="name">coupon.program.inherit</field>
+        <field name="model">coupon.program</field>
+        <field name="inherit_id" ref="coupon.coupon_program_view_coupon_program_form"/>
+        <field name="arch" type="xml">
+            <button name="%(coupon.coupon_generate_action)d" position="after">
+                <button name="test" string="Invia buoni sconto" type="object" class="btn-primary"/>
+            </button>
+        </field>
+    </record>
+</odoo>
